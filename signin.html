@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign In Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  background-color: black;
+  }
+/* universal selector */
+* {
+  box-sizing: border-box;
+  
+}
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+   font-size:1em;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.signinbutton {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.signinbutton:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+<body>
+<script>
+function sub(){
+	var i1 = document.getElementById("email1").value;
+	var i2 = document.getElementById("psw1").value;
+	var i3 = document.getElementById("psw-repeat1").value;
+	
+	
+	if(i1=="" && i2=="" && i3=="" ){
+	
+		
+        window.alert("Please fill form first!");
+	}
+ else if(i1!="" && i2!="" && i3!="" )
+ {
+			 window.alert("PLEASE KEEP SHOPPING");
+	}
+	}
+</script>
+<form action="st.botanica.html">
+  <div class="container">
+
+
+    <h1>SIGN IN</h1>
+	 <p>Please Enter your details</p>
+    <hr>
+          
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" id="email1" required/>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw1" required/>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat1" required/>
+    <hr>
+    
+
+    <button class="signinbutton" id="btnp" onclick="sub()" >Sign In</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Not have an account? <a href="C:\Users\acer\Desktop\web desgning\signup.html">Sign up</a>.</p>
+ 
+  </div>
+  
+</form>
+
+</body>
+</html>

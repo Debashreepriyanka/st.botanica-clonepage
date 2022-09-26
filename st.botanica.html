@@ -1,0 +1,548 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>St.Botanica</title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <!--bs-5css link-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <!--bs-4css link-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <!--bs-4.1css link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <style>
+   
+   
+     .line{
+	 text-align:center;
+	 font-weight:bold;
+	 font-size:30px;
+	 text-shadow: 5px 5px 10px #ff6666;
+	 }
+	 .card{
+	 float:left;
+     box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+	 border:2px;
+	 margin-right: 30px;   
+     margin-bottom: 30px;
+	 }
+     .card-title{
+	 text-decoration:none;
+	 }
+	
+	.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 75px;
+  font-size:25px;
+  color:black;
+  text-decoration:none;
+  text-shadow: 5px 5px 10px black;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 100px;
+  font-size:25px;
+  color:black;
+  text-decoration:none;
+  text-shadow: 5px 5px 10px black;
+}
+
+<!-- Style the header: fixed position (always stay at the top)-->
+.header {
+  scroll-behavior: smooth;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+<!--universal selector-->	
+* {box-sizing: border-box}
+
+<!-- style the container -->
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+<!-- style inputs and link buttons -->
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+<!-- bottom container -->
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+
+
+
+	 
+   </style>
+ </head>
+ <body>
+ <script>
+ window.alert("Welcome To The World Of St.botanica");
+ </script>
+ <!--scrollbar-->
+ <div class="header">
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+<!--navbar-->
+<div>
+ <div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-10">
+        <img height="105px" width="200px" src="C:\Users\acer\Downloads\STB---LOGO.png">
+      </div>
+      <div class="col-2">
+      <nav class="navbar bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="C:\Users\acer\Downloads\shopping-cart.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+    </a>
+  
+    <a href="C:\Users\acer\Desktop\web desgning\signin.html"class="navbar-brand" >
+      <img src="C:\Users\acer\Downloads\266134.png" alt="SIGNUP" width="50" height="50" class="d-inline-block align-text-top">
+    </a>
+      </div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">HOME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+       <div class="collapse navbar-collapse" id="navbarNav">
+      
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">HAIR CARE</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link active" aria-current="page" href="#" >SKIN CARE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">BATH & BODY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">WELLNESS</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">SALE</a>
+        </li><li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">BLOGS</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">OFFER</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--carousel-->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="C:\Users\acer\Downloads\Best-selling-gift-set-1920x527_1.gif" class="d-block w-100" alt="FIRST SLIDE">
+    </div>
+    <div class="carousel-item">
+      <img src= "C:\Users\acer\Downloads\Vit-C-Range-1920x527_1.jpg"class="d-block w-100" alt="SECOND SLIDE">
+    </div>
+    <div class="carousel-item">
+      <img src="C:\Users\acer\Downloads\1920X527_1.png" class="d-block w-100" alt="THIRD SLIDE">
+    </div>
+	<div class="carousel-item">
+      <img src="C:\Users\acer\Downloads\Monsson-Hair-care-essential-25--off-1920X527_1.gif" class="d-block w-100" alt="FOURTH SLIDE">
+    </div>
+	<div class="carousel-item">
+      <img src="C:\Users\acer\Downloads\Facial-Serums-1920x527-2.jpg"class="d-block w-100" alt="FIFTH SLIDE">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+
+  </button>
+</div>
+<br><br>
+<!-- RESPONSIVE IMAGE-->
+<img src="C:\Users\acer\Downloads\FF-Sale-Glycolic-Acid---2240x614.jpg" class="img-fluid" alt="">
+<br><br>
+<img src="C:\Users\acer\Downloads\SHIMMERING-COMBO-2240x614.gif" class="img-fluid" alt="">
+<br><br><br>
+<!--text-->
+<p class="line"> BESTSELLERS</P>
+<!--cards-->
+<div >
+<div class="card" style="width:400px">
+  <img class="card-img-top" src= "C:\Users\acer\Downloads\red onion hair oil.jpg"alt="Hair oil">
+  <div class="card-body">
+    <h4><a href="#" class="card-title" style="color:black">RED ONION HAIR OIL WITH COMB APPLICATOR, 200ML</h4></a>
+    <p class="card-text">Strengthens Roots & Improves Hair Texture</p>
+	<b><p class="price">₹ 399 <del>₹ 799</del></p></b>
+    <a href="#" class="btn btn-primary">Add To Bag</a>
+  </div>
+</div>
+<div class="card" style="width:400px">
+  <img class="card-img-top" src= "C:\Users\acer\Downloads\fc4de260-1fbf-11ec-83b7-c7f6905fb422.jpg"alt="shampoo">
+  <div class="card-body">
+    <h4><a href="#"class="card-title" style="color:black">RED ONION HAIR SHAMPOO, 300ML</h4><a>
+    <p class="card-text">Strengthens Roots & Improves Hair Texture</p>
+	<b><p class="price">₹ 649</p></b>
+    <a href="#" class="btn btn-primary">Add To Bag</a>
+  </div>
+</div>
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="C:\Users\acer\Downloads\1650886883793-STBOT771-3.jpeg"alt="Conditioner">
+  <div class="card-body">
+    <h4><a href="#" class="card-title" style="color: black">BIOTIN & COLLAGEN HAIR CONDITIONER, 200ML</h4></a>
+    <p class="card-text">For Thicker & Fuller Hair</p>
+	<b><p class="price">₹ 499</p></b>
+    <a href="#" class="btn btn-primary">Add To Bag</a>
+  </div>
+</div>
+<div class="card" style="width:400px">
+  <img class="card-img-top" src= "C:\Users\acer\Downloads\STBOT470-1.jpg"alt="Conditioner">
+  <div class="card-body">
+    <h4><a href="#" class="card-title" style="color: black">MOROCCAN ARGAN HAIR CONDITIONER,300ML</h4></a>
+    <p class="card-text">For Thicker & Fuller Hair</p>
+	<b><p class="price">₹ 499</p></b>
+   
+    <a href="#" class="btn btn-primary">Add To Bag</a>
+  </div>
+</div>
+
+<div class="card" style="width:400px">
+  <img class="card-img-top" src= "C:\Users\acer\Downloads\c395a1e0-1f9e-11ec-9d44-3d19798b1975.jpg"alt="Serum">
+  <div class="card-body">
+    <h4><a href="#" class="card-title" style="color:black">ULTIMATE HAIR REPAIR SHAMPOO, 300ML</h4></a>
+    <p class="card-text">For Healthy & Strong Hair</p>
+	<b><p class="price">₹ 599</p></b>
+    <a href="#" class="btn btn-primary">Add To Bag</a>
+  </div>
+</div>
+<div class="card" style="width:400px">
+  <img class="card-img-top" src="C:\Users\acer\Downloads\9043f4b0-1fbf-11ec-83b7-c7f6905fb422.jpg"alt="Hair oil">
+  <div class="card-body">
+    <h4><a href="#" class="card-title"style="color: black">GO ANTI HAIR FALL HAIR OIL, 150ML</h4></a>
+	<p class="card-text">Boosts Hair Density & Resists Hair fall</p>
+	<b><p class="price">₹ 399 <del>₹ 749</del></p></b>
+    <a href="#" class="btn btn-primary">Add To Bag</a>
+  </div>
+</div>
+
+<br><br><br><br><br>
+<p class="line">BUDGET BUY</P><br>
+<!--text inside image using html and css-->
+<div>
+<div class="container-fluid" style="position: relative; text-align: center;color: white;">
+  <div class="row">
+    <div class="col-6">
+        <div class="container">
+  <img src="C:\Users\acer\Downloads\Buy-2-Get-1-Free--700-x-488.png" alt="free" style="width:500px; height:300px;">
+<div><a href="#" class="top-left">BUY BEST SELLER</a></div>
+  
+</div>
+      </div>
+      <div class="col-6">
+      <div class="container"style="position: relative; text-align: center;color: white;">
+  <img src="C:\Users\acer\Downloads\Every-thing-under-399--700-x-488.png" alt="everything" style="width:500px; height:300px;">
+  <div> <a href="#" class="bottom-left">GET EVERYTHING UNDER ₹ 399</a></div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+<!--responsive image-->
+<img src="C:\Users\acer\Downloads\Trending-Top-10-3360x279.gif"class="img-fluid" alt="top10">
+<br><br><br>
+<p class="line">NATURE'S MOST POWERFUL INGREDIENTS</P><br><br>
+<!--responsive image-->
+<div class="container-fluid">
+<a href="#">
+<img src="C:\Users\acer\Downloads\Ingrideint-with-Argan-Store-Banner-700-x-488px.jpg" style="width:230px; height:150px;margin-right:25px;
+box-shadow: 10px 10px #ccccb3;"  class="img-fluid"  alt=""></a>
+ <a href="#"><img src="C:\Users\acer\Downloads\Ingrideint-with-TEA-TREE-Store-Banner-700-x-488px.jpg" style="width:230px; height:150px;margin-right:25px;
+box-shadow: 10px 10px #ccccb3;"  class="img-fluid" alt=""></a>
+ <a href="#"><img src="C:\Users\acer\Downloads\Ingrideint-with-Vit-C-Store-Banner-700-x-488px.jpg" style="width:230px; height:150px;margin-right:25px;
+box-shadow: 10px 10px #ccccb3;"  class="img-fluid" alt</a>
+ <a href="#"><img src="C:\Users\acer\Downloads\Shop-by-ingredients---Charcoal-700X488.jpg" style="width:230px; height:150px;margin-right:25px;
+box-shadow: 10px 10px #ccccb3;" class="img-fluid" alt=""></a>
+ <a href="#"><img src="C:\Users\acer\Downloads\Store-Banner-700X488.jpg" style="width:230px; height:150px;margin-right:25px;
+box-shadow: 10px 10px #ccccb3;" class="img-fluid" alt=""></a>
+</div>
+<br><br><br><br>
+<img src="C:\Users\acer\Downloads\999-Store-999-Store-2240X614.gif"class="img-fluid" alt="top10">
+<!-- js bs-4-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!--JS BOOTSTRAP LINK-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+<!--JS 4.1 BOOTSTRAP LINK-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</div><br><br><br>
+<p class="line">SHOP BY CATEGORY</P><br><br>
+<a href="#">
+
+<img src="C:\Users\acer\Downloads\Skin-Care-Kit_5.png" class="img-fluid"style="margin-right:80px;" alt="">
+
+<img src="C:\Users\acer\Downloads\Hair-Care-Kits_6.png"class="img-fluid"style="margin-right:80px;"alt="">
+<img src="C:\Users\acer\Downloads\Wellness_12.png" class="img-fluid"style="margin-right:80px; " alt="">
+<img src="C:\Users\acer\Downloads\Bath---Body_4.png" class="img-fluid"style="margin-right:80px;" alt="">
+<img src="C:\Users\acer\Downloads\Skin-Care_13.png"class="img-fluid"style="margin-right:80px;" alt="">
+<img src="C:\Users\acer\Downloads\Hair-Care_13.png" class="img-fluid"style="margin-right:80px;" alt="">
+<img src="C:\Users\acer\Downloads\KK_4.png" class="img-fluid" alt=""></a><br.<br><br><br>
+<div class="container-fluid">
+<!--video-->
+<div class="embed-responsive embed-responsive-16by9">
+   <video class="embed-responsive-item"  allowfullscreen loop autoplay muted>
+<source  src="https://www.stbotanica.com/images/What%20are%20bio%20actives%20(with%20subtitles).mp4" type="video/mp4"/></video>
+</div>
+
+<!--footer-->
+<!-- Footer -->
+<footer class="bg-light text-center text-black">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="https://www.facebook.com/stbotanica/" role="button"
+        ><button type="button" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></button>
+      </a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="https://twitter.com/stbotanica" role="button">
+      <button type="button" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></button></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="https://play.google.com/store/apps/details?id=com.stbotanica.ecommerce&hl=en_IN&gl=US" role="button"
+        ><button type="button" class="btn btn-social-icon btn-google"><i class="fa fa-google "></i></button>
+      </a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="https://www.instagram.com/stbotanica.india/?hl=en" role="button"
+        ><button type="button" class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></button>
+      </a>
+
+      <!-- Youtube -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="https://www.youtube.com/c/StBotanica" role="button"
+        ><button type="button" class="btn btn-social-icon btn-youtube"><i class="fa fa-youtube"></i></button>
+      </a>
+	  
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for daily deals</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-black mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-dark mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Made in India, Innovative Formulations with Research Backed Clinically Proven Actives. 
+		Face Care: Buy Face Cream, Moisturizer & Gel Online @Best Price in India. Science + Nature.
+		No Harmful Chemicals. Natural Formulations. Botanical Actives.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section>
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">HAIR OIL</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-black">Argan Oil</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Olive Oil</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Almond Oil</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Bhringraj & Amla</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">HAIR SERUM</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-black">Pro Keratin</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Unique Formulations</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Hair Growth</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Dry & Frizzy Hair</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">SKIN CARE</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-black">Skin Care Kits</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Day Cream</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Hand & Nail Cream</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Face Toner</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">USEFUL LINKS</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-black">Contact Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">About Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-black">Shipping and Delivery Policy</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-black" href="https://www.stbotanica.com/">st.botanica.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>sign up </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"/>
+<style>
+
+*
+{
+font-family:Audiowide;
+}
+.button {
+  background-color: #d279a6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+<!--psuedo class selector-focus-->
+input:focus{
+color:#ff3333;
+}
+textarea:focus{
+color:#ff3333;
+}
+<!--attribute selector-->
+input[type]{
+color:#e60000;
+font-size:1em;
+}
+</style>
+</head>
+
+
+<body background="https://www.exchange4media.com/news-photo/107426-image261.jpg" style="background-position: center; height:900px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;">
+  <script>
+function submit(){
+var i1 = document.getElementById("validationCustom01").value;
+	var i2 = document.getElementById("validationCustom03").value;
+	var i3 = document.getElementById("validationCustom04").value;
+	var i4 = document.getElementById("validationCustom05").value;
+
+</script>
+<h2 style="color:white;">ENTER YOUR DETAILS<h2><br>
+<form action="st.botanica.html">
+
+<label style="color:white;"id="fname">First Name</label>
+<input type="text" placeholder="Enter your first name"  maxlength="30"  required/>
+<label style="color:white;" id="mname">Middle Name</label>
+<input type="text" placeholder="Enter your Middle name" required/>
+<label style="color:white;" id="lname">Last Name</label>
+<input type="text" placeholder="Enter your Last name" required/><br><br>
+
+<label style="color:white;"id="haddress"> Home Address</label>
+<textarea name="address" rows="2" cols="100"  required/>  </textarea><br><br>
+
+<label style="color:white;">City	</label>
+<textarea name="text" rows="2" cols="80" id="city11"required/></textarea><br><br>
+<label style="color:white;" id="state11">State</label>
+<input type="text" placeholder="enter your state name" required/>
+
+<label style="color:white;"id="code">Zipcode</option>
+<input type="code" pattern="[0-9]{6}" maxlength= "6"  required/><br><br>
+<label style="color:white;"> Home Ph.</label>
+<input type="tel" pattern="[0-9]{11}" maxlength= "11"required/>
+<label style="color:white;" id=" mno">Mobile No.</label>
+<select>
+<option disabled> choose</option>
+<option>+91</option>
+<option>+96</option>
+</select>
+<input type="tel" pattern="[0-9]{10}" maxlength= "10"required/>
+
+<br><br>
+
+<label style="color:white;" id="email" > E-MAIL ID</label>
+<input type="email" placeholder=" Enter a valid mail id" required/>
+<label style="color:white;" id="psw"> PASSWORD</label>
+<input type="password" placeholder=" Enter a strong password" required/>
+<label style="color:white;">DOB</label>
+<input type="date"/><br>
+<p><input type="checkbox" >By creating an account you agree to our <a href="#">Terms & Conditions</a>.</p><br>
+
+<button class="button" id="btnp">SUBMIT</a></button>
+
+</form>
+<script "signin.js"</script>
+</body>
+</html>
